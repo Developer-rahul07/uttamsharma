@@ -1,0 +1,423 @@
+body{
+    margin: 0%;
+    box-sizing: border-box;
+    background-color: #100f10;
+    /* background-color: #1b1b1b; */
+    /* background-color: #242424; */
+    
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.navbar-light .navbar-brand {
+    color: #8739F9;
+}
+.navbar-light .navbar-brand:hover {
+    color: #8739F9;
+}
+
+.navbar{
+    background-color: #100f10;
+    z-index: 5;
+     
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #ff7657;
+    
+ }
+ 
+
+/* Chao tho yha media Queries laga kenaa 994 se start */
+/* for lappy >>>> 992px tak work karega fir toggle bar aa jayegaaa*/
+.Small_nav{
+    background-color: #242424;
+    position: relative;
+    top: 24px;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 994px) and (min-width: 577px)  {
+    .Small_nav{
+        
+        top: 17px;
+    }
+}
+
+@media only screen and (min-width: 291px)  {
+    .Small_nav{
+        top: 17px;
+        width: 84%;    }
+}
+
+/* Navbaar css end */
+
+
+/* Home css Start */
+.btn-lg{
+        position: relative;
+        top: 165px;
+        background-color: #ff7657;
+        border: 2px solid coral;
+        z-index: 999;
+        cursor: pointer;
+     
+}
+.btn-lg:hover{
+       
+    background-color: rgb(201, 66, 17);
+    border:4px solid rgb(201, 66, 17);
+    padding-bottom: 1%;
+    transition: all 0.6s;
+     
+}
+
+
+@media only screen and (max-width: 990px)  {
+  .btn-lg{
+        
+        top: 70px;
+        right: -230px;     
+}
+}
+
+@media only screen and (max-width: 770px)  {
+  .btn-lg{
+        
+    top: 55px;
+    right: -162px;    
+}
+.banner_text {
+    top: 34px;
+ }
+}
+@media only screen and (max-width: 505px)  {
+    .btn-lg {
+        top: 52px;
+        right: -135px;
+    }
+
+    .banner_text {
+        top: 40px;
+        font-size: 2rem;
+     }
+
+}
+@media only screen and (max-width: 415px)  {
+    .btn-lg {
+        top: 48px;
+        right: -96px;
+    }
+
+    .banner_text {
+        top: -30px;
+        font-size: 2rem;
+     }
+
+}
+@media only screen and (max-width: 360px)  {
+  .btn-lg{
+        
+    top: 45px;
+    right: -78px;
+}
+.banner_text {
+    top: -4px;
+    font-size: 1rem;
+ }
+}
+ 
+
+.Home_Banner {
+    /* opacity: 0.5; */
+    /* filter: brightness(20%); */
+    border-radius: 20px;     
+}
+
+.home_heading {
+    color: rgb(155, 139, 109);
+    position: relative;
+    top: -282px;
+    right: -283px;
+    display: inline-block;
+    letter-spacing: 2px;
+    word-spacing: 0px;
+}
+
+.banner_text{
+    position: relative;
+    top: 150px;
+    font-size: 2.5rem;
+    line-height: 1.9;
+    letter-spacing: 10px;
+    z-index: 1;
+}
+
+@media only screen and (min-width: 1000px)  {
+    
+    .banner_text {
+        position: relative;
+        top: 52px;
+        left: 258px;
+        font-size: 2.5rem;
+        line-height: 1.9;
+        letter-spacing: 10px;
+        z-index: 1;
+    }
+    }
+    
+    
+
+@media only screen and (max-width: 990px)  {
+    
+    .banner_text{
+        
+        top: 45px;
+        text-align: center;
+        
+    }
+}
+
+
+.banner_img{
+    z-index: 13;
+}
+
+ 
+ /* ---- particles.js container ---- */
+ 
+
+ #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 14px;
+    opacity: 0.3;
+    z-index: 2;
+}
+
+
+
+/* About css Start */
+
+/* Typewritter effect start */ 
+ 
+.wrapper .item {
+    visibility: hidden;
+    display: none;
+}
+ 
+.wrapper > div {
+    min-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: flex-end;
+    font-weight: bold;
+    color: orange;
+}
+.wrapper > div:after {
+    content: "";
+    width: 10px;
+    height: 4px;
+    display: block;
+    background: black;
+    color: orange;
+    margin-bottom: 4px;
+    margin-left: 2px;
+    animation-duration: 350ms;
+    animation-name: fade;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes fade {
+    from {
+        opacity: 1;
+	}
+    to {
+        opacity: 0;
+	}
+}
+
+/* Typewritter effect end */
+
+.about_img {
+    /* border: 3px solid burlywood; */
+    border-radius: 22%;
+    padding: 15px 35px;
+    width: 250px;
+    height: 250px;
+    position: relative;
+    right: -178px;
+}
+
+@media only screen and (max-width: 1205px) and (min-width: 994px)  {
+    
+    .about_img {
+         
+        right: -100px;
+    }
+
+
+}
+@media only screen and (max-width: 994px) and (min-width: 765px)  {
+    
+    .about_img {
+         
+        right: -22px;
+    }
+
+
+}
+@media only screen and (max-width: 765px)  {
+    
+    .about_img {
+         
+        right: -102px;
+        top: -62px;
+    }
+
+
+}
+
+@media only screen and (max-width: 415px){
+    .about_img {
+        right: -47px;
+     }
+    }
+
+@media only screen and (max-width: 366px){
+     .about_img {
+        right: -28px;
+        top: -54px;
+    }
+    }
+    
+     
+
+
+
+
+
+
+.heading{
+    font-size: 37px;
+    font-family: pb;
+    color: white;
+    letter-spacing: 10px;
+    position: relative;
+    /* display: inline-block; */
+
+}
+
+.about_text{
+    color: whitesmoke;
+}
+
+ 
+
+/* About css end */
+
+
+/* Skill css Start */
+/* 
+.Skill_img {
+    border: 3px solid burlywood;
+    border-radius: 50%;
+    padding: 20px 30px; 
+    width: 200px;
+    height: 200px;
+
+} */
+
+ 
+
+
+/* Skill css End */
+
+
+/*  Project Section Start */
+#project_text {
+    text-align: center;
+    
+}
+
+.projects_box {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 25px;
+    border-radius: 10px;
+   
+}
+
+.project_img{
+    margin: 10px;
+}
+
+.project_img:hover{
+    transform: scale(1.1);
+    transition-duration: 5s;
+
+}
+
+@media screen and (min-width: 992px) {
+    .row>* {
+    
+        max-width: 63%;
+        
+    }
+  }
+ 
+ 
+ 
+
+/*  Project Section End */
+
+
+/*  Contact Section Start */
+
+.form-control {
+padding: 0%;
+color:#242424 ;
+color: red;
+
+}
+
+.input-group-text {
+     
+    color: #ff7657;
+    background-color: black;
+    border: 1px solid black;
+  
+}
+
+.box-bg{
+    background-color: black;
+   border:2px solid black;
+    border-radius: 5px;
+}
+
+element.style {
+    position: relative;
+    top: 73px;
+}
+
+.con-btn{
+    border: 2px solid #ff7657;
+    background-color: #ff7657;
+}
+
+.display-1{
+    color: gray;
+}
+
+/*  Contact Section End */
+ 
